@@ -19,7 +19,7 @@ app.use('/api/questions', QuestionRouter)
 app.use('/api/admin', AdminRouter)
 app.use('/api/quiz', QuizRouter)
 
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
     console.log('Server is running in the port', PORT)
 })
